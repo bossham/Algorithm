@@ -1,8 +1,2 @@
 def solution(array, n):
-    count = 0
-    
-    for num in array:
-        if num == n:
-            count += 1
-            
-    return count
+    return sum(1 for x in array if x == n)
