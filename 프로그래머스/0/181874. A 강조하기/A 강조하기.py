@@ -1,10 +1,10 @@
 def solution(myString):
-    result = ""
-    for char in myString:
-        if char == "a":
-            result += "A"
-        elif char.isupper() and char != "A":
-            result += char.lower()
+    result = ''
+    for c in myString:
+        if c == 'a':
+            result += 'A'
+        elif c != 'A' and c.isupper():
+            result += c.lower()
         else:
-            result += char
+            result += c
     return result
