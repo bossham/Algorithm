@@ -1,5 +1,5 @@
-N=int(input())
-count = N//4
+N = int(input())
 
-result="long "*(count-1) + "long int"
-print(result)
+long_count = N // 4
+data = 'long '*long_count + 'int'
+print(data)
