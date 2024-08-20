@@ -1,4 +1,3 @@
-N = int(input())
-
-for i in range(N):
-    print(' ' * i + '*' * (2 * (N - i) - 1))
+n = int(input())
+for i in range(n):
+    print(' '*i + '*'*(2 * (n-i) - 1))
