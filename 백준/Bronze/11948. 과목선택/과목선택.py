@@ -1,13 +1,9 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-e = int(input())
-f = int(input())
+a,b,c,d,e,f = [int(input()) for _ in range(6)]
 
-subject = [a,b,c,d]
-subject.sort(reverse=True)
-subject1 = sum(subject[:3])
+science = [a,b,c,d]
+history = [e,f]
+science.sort(reverse=True)
+history.sort(reverse=True)
 
-subject2 = max(e,f)
-print(subject1+subject2)
+total = sum(science[:3]) + history[0]
+print(total)
