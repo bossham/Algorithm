@@ -1,7 +1,9 @@
-A, B = map(int, input().split())
-C = int(input())
-total = A*60 + B + C
+a,b = map(int, input().split())
+c = int(input())
 
-end_H = (total//60)%24
-end_M = total%60
-print(end_H, end_M)
+total = a*60 + b + c
+
+h = (total // 60) % 24
+m = total % 60
+
+print(h,m)
