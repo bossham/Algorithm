@@ -1,12 +1,13 @@
-X = int(input())
-N = int(input())
+x = int(input())
+n = int(input())
 total = 0
 
-for _ in range(N):
-    a,b=map(int, input().split())
-    total += a * b
+for _ in range(n):
+    a, b = map(int, input().split())
+    price = a * b
+    total += price
     
-if total == X:
+if total == x:
         print('Yes')
 else:
         print('No')
