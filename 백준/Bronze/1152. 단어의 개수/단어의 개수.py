@@ -1,3 +1,4 @@
-string = input()
-words = string.split()
+s = input().strip()
+words = s.split()
+
 print(len(words))
