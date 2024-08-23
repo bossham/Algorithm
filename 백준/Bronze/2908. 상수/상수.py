@@ -1,5 +1,5 @@
-A,B = input().split()
-A = A[::-1]
-B = B[::-1]
+a, b = input().split()
+a = a[::-1]
+b = b[::-1]
 
-print(max(A,B))
+print(max(a,b))
