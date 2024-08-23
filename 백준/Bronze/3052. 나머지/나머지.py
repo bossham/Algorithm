@@ -1,4 +1,8 @@
-numbers = [int(input()) for _ in range(10)]
-remains = [num % 42 for num in numbers]
+remainders = set()
 
-print(len(set(remains)))
+for _ in range(10):
+    num = int(input())
+    n = num % 42
+    remainders.add(n)
+    
+print(len(remainders))
