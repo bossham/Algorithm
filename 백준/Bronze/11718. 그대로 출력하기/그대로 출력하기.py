@@ -1,6 +1,4 @@
-try:
-    while True:
-        x = input()
-        print(x)
-except EOFError:
-    pass
+import sys
+
+for line in sys.stdin:
+    print(line, end='')
