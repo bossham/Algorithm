@@ -1,9 +1,5 @@
-N,X = map(int, input().split())
-A = list(map(int, input().split()))
-result = []
+n, x = map(int, input().split())
+a = list(map(int, input().split()))
 
-for number in A:
-    if number < X:
-        result.append(number)
-        
-print(" ".join(map(str, result)))
+result = [str(num) for num in a if num < x]
+print(' '.join(result))
