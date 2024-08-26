@@ -2,12 +2,14 @@ N = int(input())
 numbers = list(map(int, input().split()))
 prime_count = 0
 
-for num in numbers:
-    if num > 1:
-        for i in range(2, int(num**0.5) + 1):
-            if num % i == 0:
+for number in numbers:
+    if number > 1:  
+        is_prime = True
+        for i in range(2, number):
+            if number % i == 0:
+                is_prime = False
                 break
-        else:
+        if is_prime:
             prime_count += 1
 
 print(prime_count)
