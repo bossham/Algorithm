@@ -1,12 +1,15 @@
-x_coords = []
-y_coords = []
+X = []
+Y = []
 
 for _ in range(3):
     x, y = map(int, input().split())
-    x_coords.append(x)
-    y_coords.append(y)
-
-x4 = x_coords[0] ^ x_coords[1] ^ x_coords[2]
-y4 = y_coords[0] ^ y_coords[1] ^ y_coords[2]
-
+    X.append(x)
+    Y.append(y)
+    
+for x in X:
+    if X.count(x) == 1:
+        x4 = x
+for y in Y:
+    if Y.count(y) == 1:
+        y4 = y
 print(x4, y4)
