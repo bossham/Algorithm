@@ -1,9 +1,11 @@
 n = int(input())
+words = set()
 
-words = [input().strip() for _ in range(n)]
-unique_words = list(set(words))
+for _ in range(n):
+    words.add(input().strip())
+words = list(words)
+words.sort()
+words.sort(key=len)
 
-sorted_words = sorted(unique_words, key=lambda x : (len(x), x))
-
-for word in sorted_words:
+for word in words:
     print(word)
