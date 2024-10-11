@@ -1,2 +1,7 @@
 def solution(num_list):
-    return max(sum(num_list[::2]), sum(num_list[1::2]))
+    num1 = sum(num_list[1::2])
+    num2 = sum(num_list[::2])
+    if num1 == num2:
+        return num1
+    else:
+        return max(num1, num2)
